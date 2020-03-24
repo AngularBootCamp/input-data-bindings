@@ -9,7 +9,7 @@ export interface Order {
   items: Item[];
 }
 
-export const fakeApiOrderData = [
+export const mockApiOrders = [
   {
     id: 123,
     customer: 'Oasis Digital',

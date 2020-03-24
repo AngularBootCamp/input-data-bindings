@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
-import { Order, fakeApiOrderData } from '../api-types';
+import { Order, mockApiOrders } from '../api-types';
 
 @Component({
   selector: 'order-manager',
   templateUrl: './order-manager.component.html'
 })
 export class OrderManagerComponent {
-  orderList: Order[] = fakeApiOrderData;
+  orderList: Order[] = mockApiOrders;
   selectedOrder: Order | undefined;
 
   choose(i: number) {
