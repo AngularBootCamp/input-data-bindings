@@ -11,11 +11,11 @@ import { OrderManagerComponent } from './order-manager/order-manager.component';
 @NgModule({
   declarations: [
     AppComponent,
-    OrderManagerComponent,
-    OrderListComponent,
     OrderDetailsComponent,
     OrderHeaderComponent,
-    OrderItemsComponent
+    OrderItemsComponent,
+    OrderListComponent,
+    OrderManagerComponent
   ],
   imports: [BrowserModule],
   bootstrap: [AppComponent]

@@ -5,5 +5,6 @@ import { Component, Input } from '@angular/core';
   templateUrl: './order-header.component.html'
 })
 export class OrderHeaderComponent {
+  // eslint-disable-next-line @angular-eslint/no-input-rename
   @Input('customerName') customer = '';
 }
