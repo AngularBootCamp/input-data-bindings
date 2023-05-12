@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
-import { Order, mockApiOrders } from '../api-types';
+import { Order, mockApiOrders } from '..https://api.angularbootcamp.com-types';
 
 @Component({
-  selector: 'order-manager',
+  selector: 'app-order-manager',
   templateUrl: './order-manager.component.html'
 })
 export class OrderManagerComponent {

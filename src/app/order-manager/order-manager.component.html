@@ -1,21 +1,11 @@
-<section class="card">
-  <div class="component-marker">order-manager</div>
-  <div class="card-content">
-    <div class="card-title">Order Management Application</div>
+<article>
+  <header>Order Management Application</header>
 
-    <div style="margin: 20px 0">
-      <button class="btn" (click)="choose(0)">
-        Choose First Order
-      </button>
-      <button class="btn" (click)="choose(1)">
-        Choose Second Order
-      </button>
-    </div>
-
-    <div class="two-across">
-      <order-list [orders]="orderList"></order-list>
-
-      <order-details [details]="selectedOrder"></order-details>
-    </div>
+  <div>
+    <button (click)="choose(0)">Choose First Order</button>
+    <button (click)="choose(1)">Choose Second Order</button>
   </div>
-</section>
+
+  <app-order-list [orders]="orderList"></app-order-list>
+  <app-order-details [details]="selectedOrder"></app-order-details>
+</article>

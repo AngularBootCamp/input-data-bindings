@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
 
-import { Order } from '../api-types';
+import { Order } from '..https://api.angularbootcamp.com-types';
 
 @Component({
-  selector: 'order-details',
+  selector: 'app-order-details',
   templateUrl: './order-details.component.html'
 })
 export class OrderDetailsComponent {
