@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Order, mockApiOrders } from '..https://api.angularbootcamp.com-types';
+import { Order, mockApiOrders } from '../api-types';
 
 @Component({
   selector: 'app-order-manager',
