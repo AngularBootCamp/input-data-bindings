@@ -10,5 +10,5 @@ import { Item } from '../api-types';
   imports: [NgFor]
 })
 export class OrderItemsComponent {
-  @Input() items: Item[] = [];
+  @Input({ required: true }) items!: Item[];
 }

@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class OrderHeaderComponent {
   // eslint-disable-next-line @angular-eslint/no-input-rename
-  @Input('customerName') customer = '';
+  @Input({ required: true, alias: 'customerName' }) customer!: string;
 }

@@ -11,6 +11,6 @@ import { Order } from '../api-types';
 })
 export class OrderListComponent {
   // defaults to property name = variable name.
-  // can override, @Input('name')
-  @Input() orders: Order[] = [];
+  // can override, @Input('name') or @Input({alias: 'name'})
+  @Input({ required: true }) orders!: Order[];
 }

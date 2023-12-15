@@ -12,5 +12,5 @@ import { OrderItemsComponent } from '../order-items/order-items.component';
   imports: [NgIf, OrderHeaderComponent, OrderItemsComponent]
 })
 export class OrderDetailsComponent {
-  @Input() details: Order | undefined;
+  @Input({ required: true }) details: Order | undefined;
 }
