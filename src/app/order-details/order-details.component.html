@@ -1,6 +1,10 @@
-<div *ngIf="!details">Please select order to view details</div>
-<div *ngIf="details">
-  <header>Details</header>
-  <app-order-header [customerName]="details.customer" />
-  <app-order-items [items]="details.items" />
-</div>
+@if (!details) {
+  <div>Please select order to view details</div>
+}
+@if (details) {
+  <div>
+    <header>Details</header>
+    <app-order-header [customerName]="details.customer" />
+    <app-order-items [items]="details.items" />
+  </div>
+}
